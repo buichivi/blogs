@@ -78,5 +78,9 @@ body {
 }
 
 .wrapper {
-  @apply container lg:px-[112px] max-w-screen-2xl;
+  @apply container lg:px-[112px] md:px-5 max-w-screen-2xl;
+}
+
+[id] {
+  @apply scroll-m-24;
 }

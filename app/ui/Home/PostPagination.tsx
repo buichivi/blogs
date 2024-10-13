@@ -16,7 +16,7 @@ export default function PostPagination() {
     <Pagination>
       <PaginationContent className='mt-5 w-full h-10 flex items-center justify-between'>
         <PaginationItem>
-          <PaginationPrevious href='#' />
+          <PaginationPrevious href='#all-post' />
         </PaginationItem>
         <div className='flex items-center gap-2'>
           {pageNumbers.map((page, index) => {

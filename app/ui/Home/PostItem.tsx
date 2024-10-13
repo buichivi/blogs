@@ -10,16 +10,17 @@ type Props = {
 const PostItem = ({ post, layout = 'medium' }: Props) => {
   return (
     <div
-      className={clsx('flex gap-8 w-full', {
-        'flex-row justify-between': layout === 'large' || layout === 'small',
-        'flex-col': layout === 'medium',
+      className={clsx('flex gap-8 w-full lg:flex-row', {
+        'justify-between md:flex-col': layout === 'large',
+        'md:flex-col lg:flex-col': layout === 'medium',
       })}
     >
       <img
         src='https://i.ytimg.com/vi/iw5Dd0-gh3Q/maxresdefault.jpg'
         alt=''
         className={clsx(`flex-1 w-full h-[50%] max-h-[228px] object-cover shrink-0`, {
-          'w-1/2 min-h-[200px]': layout === 'large' || layout === 'small',
+          'w-1/2': layout === 'large',
+          'w-1/2 max-h-[200px]': layout === 'small',
         })}
       />
       <div className='flex-1 flex flex-col gap-6 justify-between'>
@@ -39,19 +40,19 @@ const PostItem = ({ post, layout = 'medium' }: Props) => {
               <span>UX review presentations</span>
               {(layout === 'medium' || layout === 'large') && (
                 <svg
-                  width='24'
-                  height='24'
-                  viewBox='0 0 24 24'
+                  width='15'
+                  height='15'
+                  viewBox='0 0 15 15'
                   fill='none'
                   xmlns='http://www.w3.org/2000/svg'
+                  className='size-6'
                 >
                   <path
-                    d='M7 17L17 7M17 7H7M17 7V17'
-                    stroke='white'
-                    stroke-width='2'
-                    stroke-linecap='round'
-                    stroke-linejoin='round'
-                  />
+                    d='M3.64645 11.3536C3.45118 11.1583 3.45118 10.8417 3.64645 10.6465L10.2929 4L6 4C5.72386 4 5.5 3.77614 5.5 3.5C5.5 3.22386 5.72386 3 6 3L11.5 3C11.6326 3 11.7598 3.05268 11.8536 3.14645C11.9473 3.24022 12 3.36739 12 3.5L12 9.00001C12 9.27615 11.7761 9.50001 11.5 9.50001C11.2239 9.50001 11 9.27615 11 9.00001V4.70711L4.35355 11.3536C4.15829 11.5488 3.84171 11.5488 3.64645 11.3536Z'
+                    fill='currentColor'
+                    fill-rule='evenodd'
+                    clip-rule='evenodd'
+                  ></path>
                 </svg>
               )}
             </div>
