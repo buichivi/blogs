@@ -8,18 +8,18 @@ export default function Footer() {
       <p>© 2024</p>
       <div className='flex items-center gap-2'>
         <Link href='#'>
-          <Button variant='ghost'>
-            <GitHubLogoIcon className='size-4' />
+          <Button variant='ghost' size='icon'>
+            <GitHubLogoIcon className='size-5' />
           </Button>
         </Link>
         <Link href='#'>
-          <Button variant='ghost'>
-            <TwitterLogoIcon className='size-4' />
+          <Button variant='ghost' size='icon'>
+            <TwitterLogoIcon className='size-5' />
           </Button>
         </Link>
         <Link href='#'>
-          <Button variant='ghost'>
-            <InstagramLogoIcon className='size-4' />
+          <Button variant='ghost' size='icon'>
+            <InstagramLogoIcon className='size-5' />
           </Button>
         </Link>
       </div>

@@ -78,7 +78,7 @@ body {
 }
 
 .wrapper {
-  @apply container lg:px-[112px] md:px-5 max-w-screen-2xl;
+  @apply container px-5 max-w-screen-sm md:px-5 md:max-w-screen-lg lg:px-[112px] lg:max-w-screen-2xl;
 }
 
 [id] {
