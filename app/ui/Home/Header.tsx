@@ -1,7 +1,6 @@
-import { Button } from '@/components/ui/button';
 import { ModeToggle } from '@/components/ui/themeswitch';
-import { HamburgerMenuIcon } from '@radix-ui/react-icons';
 import Link from 'next/link';
+import MenuMobile from './MenuMobile';
 
 export default function Header() {
   return (
@@ -20,9 +19,7 @@ export default function Header() {
               <ModeToggle />
             </li>
           </ul>
-          <Button size='icon' variant='ghost' className='md:hidden'>
-            <HamburgerMenuIcon className='size-5' />
-          </Button>
+          <MenuMobile />
         </div>
       </div>
     </header>

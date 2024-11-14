@@ -14,7 +14,7 @@ export default function PostPagination() {
 
   return (
     <Pagination>
-      <PaginationContent className='mt-5 w-full h-10 flex items-center justify-between'>
+      <PaginationContent className='mt-5 w-full h-10 flex items-center justify-between flex-col md:flex-row'>
         <PaginationItem>
           <PaginationPrevious href='#all-post' />
         </PaginationItem>
