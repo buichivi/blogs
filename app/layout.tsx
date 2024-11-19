@@ -10,22 +10,15 @@ type RootLayoutProps = {
 };
 export default function RootLayout({ children }: RootLayoutProps) {
   return (
-    <>
-      <html lang='en' suppressHydrationWarning>
-        <head />
-        <body className={`${inter.className} antialiased`}>
-          <ThemeProvider
-            attribute='class'
-            defaultTheme='system'
-            enableSystem
-            disableTransitionOnChange
-          >
-            <Header />
-            {children}
-            <Footer />
-          </ThemeProvider>
-        </body>
-      </html>
-    </>
+    <html lang='en' suppressHydrationWarning>
+      <head />
+      <body className={`${inter.className} antialiased`}>
+        <ThemeProvider attribute='class' defaultTheme='system' enableSystem>
+          <Header />
+          {children}
+          <Footer />
+        </ThemeProvider>
+      </body>
+    </html>
   );
 }
