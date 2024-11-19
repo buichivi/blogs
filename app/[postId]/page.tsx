@@ -3,6 +3,7 @@
 import React from 'react';
 import RecentBlogPostsDetail from '../ui/Blog/RecentBlogPostsDetail';
 import BlogDetail from '../ui/Blog/BlogDetail';
+import Newletters from '../ui/Blog/Newletters';
 
 type Props = {
   params: {
@@ -19,6 +20,7 @@ const Page: React.FC<Props> = ({ params: { postId } }) => {
       </div>
       <div className='basis-2/3 shrink-0'>
         <BlogDetail />
+        <Newletters />
       </div>
     </div>
   );
