@@ -14,9 +14,11 @@ export default function RootLayout({ children }: RootLayoutProps) {
       <head />
       <body className={`${inter.className} antialiased`}>
         <ThemeProvider attribute='class' defaultTheme='system' enableSystem>
-          <Header />
-          {children}
-          <Footer />
+          <div className='wrapper'>
+            <Header />
+            {children}
+            <Footer />
+          </div>
         </ThemeProvider>
       </body>
     </html>

@@ -1,7 +1,7 @@
 import { Post } from '@/app/lib/definition';
 import { Badge } from '@/components/ui/badge';
 import clsx from 'clsx';
-import Image from 'next/image';
+// import Image from 'next/image';
 import Link from 'next/link';
 type Props = {
   post: Post;
