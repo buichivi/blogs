@@ -14,13 +14,14 @@ type Props = {
 const Page: React.FC<Props> = ({ params: { postId } }) => {
   console.log(postId);
   return (
-    <div className='flex items-start justify-between gap-8 mt-[30px] px-8'>
+    <div className='flex flex-col-reverse lg:flex-row items-start justify-between gap-8 mt-[30px] lg:px-8'>
       <div className='basis-1/3 shrink-0'>
         <RecentBlogPostsDetail />
+        <Newletters className='block lg:hidden' />
       </div>
       <div className='basis-2/3 shrink-0'>
         <BlogDetail />
-        <Newletters />
+        <Newletters className='hidden lg:block' />
       </div>
     </div>
   );
